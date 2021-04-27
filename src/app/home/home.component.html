@@ -1,0 +1,261 @@
+<header class="gilroy" id="header">
+    <div class="container-xl">
+        <div class="d-flex flex-wrap align-items-center justify-content-md-between py-2 py-md-0 pb-4 pb-md-4">
+            <h6 class="my-0 py-md-3"><span class="material-icons pe-2">phone</span> +91 9895011345, 9895011379</h6>
+            <h6 class="my-0 py-md-3"><span class="material-icons pe-2">email</span> contact@avenirinstitute.in</h6>
+        </div>
+    </div>
+</header>
+
+<div class="position-relative" (scroll)="onWindowScroll($event);">
+
+    <nav class="navbar flex-wrap montserrat nav-styles navbar-light navbar-expand-xl py-0">
+        <div class="container-xl bg-white px-0" style="box-shadow: 0px 6px 6px 0px #00000030;">
+            <a class="ms-4 my-3" href="index.html">
+                <img id="logo" class="d-none d-md-flex" src="assets/logo.png" alt="">
+                <img id="logo2" class="d-flex d-md-none" src="assets/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler me-4 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-dropper" aria-controls="nav-dropper" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">menu</span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-dropper">
+                <ul class="navbar-nav ms-auto mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#header" (click)="toggler()">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#about" (click)="toggler()">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                        <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#courses" (click)="toggler()">(Diploma in Aviation, Hospitality,<br> 
+                                    Travel and Airport Management)</a></li>
+                            <li><a class="dropdown-item" href="#courses" (click)="toggler()">(Diploma in Hospitality,<br>
+                                    Travel and Customer Service)</a></li>
+                            <li><a class="dropdown-item" href="#courses" (click)="toggler()">(International Air Transport Association)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#placement" (click)="toggler()">Placement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#" (click)="toggler()">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#" (click)="toggler()">Gallery</a>
+                    </li>
+                    <li class="nav-item me-xl-3">
+                        <a class="nav-link px-3" href="#" (click)="toggler()">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-xl px-0">
+            <div class="gradient" id="gradient"></div>
+        </div>
+    </nav>
+
+    <section class="slider-section">
+        <img class="flight" src="assets/flight.png" alt="">
+        <img class="airhostess" src="assets/airhostess.png" alt="">
+
+        <owl-carousel [options]="carouselOptions" [carouselClasses]="['owl-theme', 'sliding']">
+            <div class="item container px-0">
+                <h1 class="gilroy"><span>Take off</span> your career<br>and get ready to <span>Fly high</span></h1>
+            </div>
+        </owl-carousel>
+
+        <div class="container px-0">
+            <button class="new-btn btn-style montserrat">Enquire Us</button>
+        </div>
+    </section>
+
+    <section class="welcome montserrat py-lg-5" id="about">
+        <div class="container-xl">
+            <div class="row mx-0 flex-column-reverse flex-lg-row">
+                <div class="col-lg-5 d-flex align-items-center">
+                    <img class="college-img" src="assets/college.jpg" alt="">
+                </div>
+                <div class="col-lg-7 d-flex align-items-center">
+                    <div class="college-cnt py-4">
+                        <h3>WELCOME TO</h3>
+                        <h1>AVENIR</h1>
+                        <h2>INSTITUTE OF AVIATION</h2>
+                        <p class="mt-4 mb-0">Avenir’s focus lies in creating versatile, structured training programs and certificate courses for students. The training is made after years of dedicated research and provides each student with the knowledge and skills required
+                            to realize great success within the fields of Aviation, Hospitality, and Travel and Customer Service.<br><br> We have faculties graduated from the best universities with experience of working with reputed international and
+                            domestic airlines. They hold the competence to train you to perfection. We strongly believe that an atmosphere where the student feels comfortable and at ease makes for better learning. Every single centre is fully air-conditioned
+                            and we provide high-quality food and accommodation facilities. We maintain the equal dignity and decorum of the airline industry.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/flight2.png" alt="" class="flight2">
+        </div>
+    </section>
+
+    <section class="why montserrat mt-5 mt-lg-0">
+        <div class="container">
+            <div class="row mx-0 flex-column-reverse flex-lg-row">
+                <div class="col-lg-4">
+                    <img src="assets/airhostess2.png" alt="" class="airhostess2 d-none d-lg-block">
+                </div>
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="why-cnt py-5 py-lg-4">
+                        <h2><span>WHY</span> AVENIR</h2>
+                        <p class="mt-3 mb-0">We simply provide the best to our students. Our courses are designed after detailed study from experts who have abundant experience in the aviation industry. Avenir has a separate Placement Assistance Cell to assist and groom students
+                            to become professionals and enable them to write their own success stories.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/flight2.png" alt="" class="flight2">
+        </div>
+    </section>
+
+    <section class="clipper montserrat w-100" id="courses">
+        <div class="clipper-bg"></div>
+        <div class="container" style="position: relative;z-index: 1;">
+            <div class="popular pb-5">
+                <h2><span>POPULAR </span>COURSES</h2>
+                <p class="mb-0">Two hours a day for 5 days a week (Mon-Fri) is the schedule for below mentioned courses. Add-on weekend batches are also available.</p>
+            </div>
+        </div>
+        <img src="assets/flight.png" alt="" class="plane1">
+        <div class="boxes py-5">
+            <div class="container-xl">
+                <div class="row mx-0">
+                    <div class="col-xl-6 p-2 p-md-3">
+                        <div class="box">
+                            <div class="row mx-0">
+                                <div class="col-md-8 d-flex align-items-center p-3">
+                                    <div>
+                                        <h1>DAHTM</h1>
+                                        <h5 class="mb-2">(Diploma in Aviation, Hospitality, Travel and Airport Management)</h5>
+                                        <h6 class="mb-2"><span>ELIGIBLITY CRITERIA :</span> 17 - 24 year, for 12th pass students & above</h6>
+                                        <h6 class="mb-2"><span>DURATION :</span> 1 Year</h6>
+                                        <p class="mb-0">Aviation Management deals with the study of airlines, airports, and business associated with the aerospace industry. Customer handling, ticketing, international tourism board, travel and hospitality, and in-flight
+                                            services are included in aviation management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3 p-md-0 px-md-0">
+                                    <img class="w-100" src="assets/01.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 p-2 p-md-3">
+                        <div class="box">
+                            <div class="row mx-0">
+                                <div class="col-md-8 d-flex align-items-center p-3">
+                                    <div>
+                                        <h1>DHTCS</h1>
+                                        <h5 class="mb-2">(Diploma in Hospitality, Travel and Customer Service)</h5>
+                                        <h6 class="mb-2"><span>ELIGIBLITY CRITERIA :</span> 17 - 24 year, for 12th pass students & above</h6>
+                                        <h6 class="mb-2"><span>DURATION :</span> 1 Year</h6>
+                                        <p class="mb-0">Having a good connection with customers consistently encourages you to have a lovely and blissful workplace. Travel around the globe with your friendly customers.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3 p-md-0 px-md-0">
+                                    <img class="w-100" src="assets/02.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 p-2 p-md-3">
+                        <div class="box">
+                            <div class="row mx-0">
+                                <div class="col-md-8 d-flex align-items-center p-3">
+                                    <div>
+                                        <h1>IATA</h1>
+                                        <h5 class="mb-2">(International Air Transport Association)</h5>
+                                        <h6 class="mb-2"><span>ELIGIBLITY CRITERIA :</span> 17 - 24 year, for 12th pass students & above</h6>
+                                        <h6 class="mb-2"><span>DURATION :</span> 6 Months / 1 Year</h6>
+                                        <p class="mb-0">IATA molds you to turn into a specialist in Aviation industry. Our portfolio incorporates subjects for airlines, airports, cargo operators, governments, ground service providers, travel agents, and many more.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3 p-md-0 px-md-0">
+                                    <img class="w-100" src="assets/03.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="white-bar">
+            <img class="flightx" src="assets/flight.png" alt="">
+            <img class="flighty" src="assets/flight.png" alt="">
+        </div>
+
+        <section class="placement montserrat" id="placement">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 p-3 d-flex align-items-center">
+                        <div class="cnt">
+                            <h1>PLACEMENT OPPORTUNITIES</h1>
+                            <div class="clip-line mt-3 mb-4"></div>
+                            <p class="mb-0">We help Avenians to take off their career with top airlines "airport and hospitality industry" in the placement opportunities section. Our Placement Cell is rich enough with qualified and experienced experts to groom Avenians
+                                for catching their dream flights. We feel pleased when our students get wings from Etihad, British Airways, Qatar Airways, Singapore Airlines, Lufthansa, Malaysia Airlines, Emirates, and a lot more Airlines.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 p-3 d-flex align-items-center">
+                        <img class="w-100" src="assets/x02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-7 p-3 d-flex align-items-center">
+                        <div class="cnt">
+                            <h1>REWARDS</h1>
+                            <div class="clip-line mt-3 mb-4"></div>
+                            <li>Exciting payroll</li>
+                            <li>Luxurious lifestyle</li>
+                            <li>Learn globally transferable skills</li>
+                            <li>International Environment</li>
+                            <li>Holiday in exotic locations</li>
+                            <li>Travel world-wide</li>
+                            <li>Opportunity to meet society’s upper crust</li>
+                            <li>International food and accommodation facilities</li>
+                        </div>
+                    </div>
+                    <div class="col-md-5 p-3 d-flex align-items-center">
+                        <img class="w-100" src="assets/x01.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="cnt">
+                        <h1>CERTIFICATION</h1>
+                        <div class="clip-line mt-3 mb-4"></div>
+                        <div class="row mx-0">
+                            <div class="col-md-6 pt-5 text-center">
+                                <img class="cert-img" src="assets/iata.jpg" alt="">
+                                <p class="cert-detail mt-2">IATA certified courses are globally recognized by all travel agencies and airlines in any corner of the earth. Equipping yourself with the IATA certification helps in broadening your professional scope in additional domains.</p>
+                            </div>
+                            <div class="col-md-6 pt-5 text-center">
+                                <img class="cert-img" src="assets/sted.jpg" alt="">
+                                <p class="cert-detail mt-2">STED is India's largest and leading certification body which has high credibility among employers in India and abroad, especially within the Middle East.
+                                </p>
+                            </div>
+                            <div class="col-md-6 pt-5 text-center">
+                                <img class="cert-img" src="assets/galileo.jpg" alt="">
+                                <p class="cert-detail mt-2">Galileo is the most widely accepted Computerised Reservation System (CRS) and above 500 airlines use Galileo for their reservations.
+                                </p>
+                            </div>
+                            <div class="col-md-6 pt-5 text-center">
+                                <img class="cert-img" src="assets/jain.jpg" alt="">
+                                <p class="cert-detail mt-2">JAINx offers a wide range of programs in some of the top Industry domains like Information Technology, Business Analytics, Digital Marketing, to list a few. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="mt-5">
+            <div class="bg-colg">
+                fasfda
+            </div>
+        </div>
+    </section>
+</div>

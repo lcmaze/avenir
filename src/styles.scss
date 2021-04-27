@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --prime: #c5151c;
+}
+
+body * {
+    transition: all .2s ease-in-out;
+}
+
+.dropdown .dropdown-menu a:hover {
+    color: #fff;
+    background-color: var(--prime);
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+.gilroy {
+    font-family: 'Khula', sans-serif;
+}
+
+.clip-line {
+    width: 400px;
+    height: 18px;
+    clip-path: polygon(0 50%, 100% 0, 96% 100%, 0% 100%);
+    background: linear-gradient(90deg, #fff 0%, var(--prime) 60%, var(--prime) 100%);
+}
+
+@media (max-width: 767.98px) {
+    .clip-line {
+        width: 100%;
+    }
+}

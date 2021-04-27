@@ -1,0 +1,351 @@
+header {
+    background-color: var(--prime);
+    color: #fff;
+    z-index: 99;
+    position: relative;
+    h6 {
+        font-weight: 400;
+        .material-icons {
+            vertical-align: middle;
+        }
+    }
+}
+
+.nav-styles {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: -20px;
+    #logo {
+        width: 200px;
+    }
+    .dropdown-menu li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eaeaea;
+        font-weight: 500;
+        text-transform: initial;
+    }
+}
+
+.gradient {
+    content: '';
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--prime) 0%, var(--prime) 15%, #fff 100%);
+}
+
+.slider-section {
+    background-color: #B4B2B3;
+    margin-top: -115px;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    .flight {
+        width: 65%;
+        position: absolute;
+        top: 100px;
+        left: -15%;
+        z-index: 1;
+    }
+    .airhostess {
+        width: 60%;
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        z-index: 1;
+    }
+    .item {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+        background-color: transparent;
+        h1 {
+            font-size: 70px;
+            font-weight: 600;
+            // color: var(--prime);
+            color: #fff;
+            text-shadow: 4px 4px 4px #00000040;
+            span {
+                color: #fff;
+                text-shadow: 4px 4px 4px #ffffff10;
+                color: var(--prime);
+                font-weight: 700;
+            }
+        }
+    }
+    .new-btn {
+        position: absolute;
+        z-index: 99;
+        top: 60vh;
+    }
+    .btn-style {
+        background-color: #000;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 0px 0px #00000040;
+        border: 1px solid #000;
+    }
+    .btn-style:hover {
+        border: 1px solid #000;
+        box-shadow: 0px 0px 6px 0px #00000040;
+    }
+}
+
+.welcome {
+    position: relative;
+    .college-img {
+        border-radius: 10px;
+        box-shadow: 0px 6px 6px 0px #00000020;
+        max-width: 100%;
+    }
+    .college-cnt {
+        h3 {
+            font-size: 20px;
+            color: #585858;
+        }
+        h1 {
+            font-size: 50px;
+            color: var(--prime);
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 26px;
+            color: #585858;
+            font-weight: 600;
+        }
+    }
+    .flight2 {
+        position: absolute;
+        width: 300px;
+        right: 5%;
+        top: 60px;
+    }
+}
+
+.why {
+    background-color: #cacaca;
+    position: relative;
+    .airhostess2 {
+        width: 100%;
+    }
+    .why-cnt {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--prime);
+            span {
+                font-weight: 500;
+                color: #585858;
+            }
+        }
+    }
+    .flight2 {
+        position: absolute;
+        width: 300px;
+        right: 5%;
+        bottom: 40px;
+    }
+}
+
+.clipper {
+    position: relative;
+    overflow: hidden;
+    .clipper-bg {
+        background-color: var(--prime);
+        clip-path: polygon(100% 38%, 100% 0, 60% 40%, 0 100%, 0 38%);
+        position: absolute;
+        width: 100%;
+        height: 130vh;
+        z-index: 2;
+        top: 0;
+        mix-blend-mode: multiply;
+    }
+    .popular {
+        z-index: 4;
+        padding-top: 100px;
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--prime);
+            span {
+                font-weight: 500;
+                color: #585858;
+            }
+        }
+        p {
+            max-width: 768px;
+        }
+    }
+    .plane1 {
+        width: 360px;
+        position: absolute;
+        right: 0%;
+        top: 30px;
+        transform: rotate(-20deg);
+    }
+    .boxes {
+        background-color: #EFECEC;
+        .box {
+            background-color: #fff;
+            // height: 100%;
+            box-shadow: 6px 6px 6px 0px #00000015;
+            cursor: pointer;
+            position: relative;
+            z-index: 3;
+            h1 {
+                font-size: 24px;
+                font-weight: 600;
+            }
+            h5 {
+                font-size: 16px;
+            }
+            h6 {
+                font-size: 16px;
+                span {
+                    color: var(--prime)
+                }
+            }
+            p {
+                font-size: 14px;
+                color: #3d3d3d;
+            }
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .box:hover {
+            box-shadow: 0px 0px 6px 0px #00000015;
+            transform: scale(1.02);
+        }
+    }
+    .white-bar {
+        position: relative;
+        .flightx {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 300px;
+            transform: rotate( -20deg);
+        }
+        .flighty {
+            position: absolute;
+            top: 60px;
+            left: 320px;
+            width: 200px;
+            transform: rotate( -20deg);
+        }
+    }
+}
+
+.placement {
+    background: transparent;
+    margin-top: 100px;
+    .cnt {
+        li {
+            list-style-type: circle;
+            line-height: 30px
+        }
+        p {
+            line-height: 30px;
+        }
+        .cert-img {
+            height: 200px;
+            width: 200px;
+            object-fit: contain;
+        }
+        .cert-detail {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.bg-colg {
+    background-image: url('/assets/bg-colg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:1199.98px) {
+    .navbar-nav {
+        background-color: #eaeaea;
+        .nav-item {
+            .nav-link {
+                color: #000;
+                border-bottom: 1px solid #d0d0d0;
+            }
+        }
+    }
+    .slider-section {
+        height: 500px;
+        .flight {
+            width: 65%;
+            top: 100px;
+            left: -15%;
+        }
+        .airhostess {
+            width: 60%;
+            top: 5%;
+            right: 5%;
+        }
+        .item {
+            height: 520px;
+            h1 {
+                font-size: 40px;
+            }
+        }
+        .new-btn {
+            top: 340px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .nav-styles {
+        #logo2 {
+            width: 130px;
+        }
+    }
+    .slider-section {
+        height: 500px;
+        .flight {
+            width: 85%;
+            top: 110px;
+            left: -15%;
+        }
+        .airhostess {
+            width: 80%;
+            top: unset;
+            bottom: 0;
+            right: 5%;
+        }
+        .item {
+            height: 500px;
+            padding: 0px 16px !important;
+            h1 {
+                font-size: 40px;
+            }
+        }
+        .new-btn {
+            top: 380px;
+            left: 16px;
+        }
+    }
+    .clipper {
+        .clipper-bg {
+            display: none;
+        }
+        .plane1 {
+            width: 280px;
+            right: 10%;
+        }
+    }
+}
