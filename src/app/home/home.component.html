@@ -7,15 +7,19 @@
     </div>
 </header>
 
+<a class="whatsapp" target="_blank" href="https://wa.me/919895011345">
+    <img src="assets/whatsapp.png" alt="">
+</a>
+
 <div class="position-relative" (scroll)="onWindowScroll($event);">
 
     <nav class="navbar flex-wrap montserrat nav-styles navbar-light navbar-expand-xl py-0">
         <div class="container-xl bg-white px-0" style="box-shadow: 0px 6px 6px 0px #00000030;">
-            <a class="ms-4 my-3" href="index.html">
+            <a class="ms-3 my-2 py-1" href="index.html">
                 <img id="logo" class="d-none d-md-flex" src="assets/logo.png" alt="">
                 <img id="logo2" class="d-flex d-md-none" src="assets/logo.png" alt="">
             </a>
-            <button class="navbar-toggler me-4 my-3" type="button" data-bs-toggle="collapse" data-bs-target="#nav-dropper" aria-controls="nav-dropper" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-3 my-2 py-1" type="button" data-bs-toggle="collapse" data-bs-target="#nav-dropper" aria-controls="nav-dropper" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="material-icons">menu</span>
             </button>
             <div class="collapse navbar-collapse" id="nav-dropper">
@@ -40,13 +44,13 @@
                         <a class="nav-link px-3" href="#placement" (click)="toggler()">Placement</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#" (click)="toggler()">News</a>
+                        <a class="nav-link px-3" href="#news" (click)="toggler()">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-3" href="#" (click)="toggler()">Gallery</a>
+                        <a class="nav-link px-3" href="#gallery" (click)="toggler()">Gallery</a>
                     </li>
                     <li class="nav-item me-xl-3">
-                        <a class="nav-link px-3" href="#" (click)="toggler()">Contact Us</a>
+                        <a class="nav-link px-3" href="#contact" (click)="toggler()">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -62,12 +66,17 @@
 
         <owl-carousel [options]="carouselOptions" [carouselClasses]="['owl-theme', 'sliding']">
             <div class="item container px-0">
-                <h1 class="gilroy"><span>Take off</span> your career<br>and get ready to <span>Fly high</span></h1>
+                <h1 style="font-family: 'paintedbrush', sans-serif;"><span>Take off</span> your career<br>and get ready to <span>Fly high</span></h1>
             </div>
         </owl-carousel>
 
         <div class="container px-0">
-            <button class="new-btn btn-style montserrat">Enquire Us</button>
+            <div class="new-btn">
+                <a href="#enquire" class="btn-style montserrat">Enquire Us</a>
+                <div class="mt-4 mt-md-5">
+                    <img class="fut-logo mt-3 mt-md-4" src="assets/fut-logo.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -78,7 +87,7 @@
                     <img class="college-img" src="assets/college.jpg" alt="">
                 </div>
                 <div class="col-lg-7 d-flex align-items-center">
-                    <div class="college-cnt py-4">
+                    <div class="college-cnt py-4 ps-lg-4 ps-xxl-0">
                         <h3>WELCOME TO</h3>
                         <h1>AVENIR</h1>
                         <h2>INSTITUTE OF AVIATION</h2>
@@ -99,7 +108,8 @@
                 <div class="col-lg-4">
                     <img src="assets/airhostess2.png" alt="" class="airhostess2 d-none d-lg-block">
                 </div>
-                <div class="col-lg-8 d-flex align-items-center">
+                <div class="col-lg-8 d-flex align-items-center position-relative">
+                    <img src="assets/line.svg" class="line-plane" alt="">
                     <div class="why-cnt py-5 py-lg-4">
                         <h2><span>WHY</span> AVENIR</h2>
                         <p class="mt-3 mb-0">We simply provide the best to our students. Our courses are designed after detailed study from experts who have abundant experience in the aviation industry. Avenir has a separate Placement Assistance Cell to assist and groom students
@@ -108,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <img src="assets/flight2.png" alt="" class="flight2">
+            <!-- <img src="assets/flight2.png" alt="" class="flight2"> -->
         </div>
     </section>
 
@@ -252,10 +262,154 @@
             </div>
         </section>
 
-        <div class="mt-5">
-            <div class="bg-colg">
-                fasfda
+        <div class="mt-5" id="enquire">
+            <div class="bg-colg py-5">
+                <div class="container py-5">
+                    <div class="box">
+                        <h1>Enquire*</h1>
+                        <input type="text" class="trans" placeholder="FULL NAME">
+                        <input type="email" class="trans" placeholder="EMAIL ADDRESS">
+                        <input type="phone" class="trans" placeholder="PHONE NUMBER">
+                        <input type="date" class="trans" placeholder="DATE OF BIRTH">
+                        <select class="trans">
+                            <option selected disabled>CHOOSE COURSE</option>
+                            <option>DAHTM</option>
+                            <option>DHTCS</option>
+                            <option>IATA</option>
+                        </select>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button class="btn-style">Send</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="news my-5" id="news">
+            <div class="container">
+                <h1>NEWS</h1>
+                <div class="clip-line mt-3 mb-4"></div>
+
+                <div class="row mx-0 mt-5">
+                    <div class="col-md-3  px-0 d-none d-md-flex">
+                        <img src="assets/admission.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="col-md-9 py-3 px-3 py-md-0">
+                        <div class="w-100 ps-md-3">
+                            <h2>Admission Started</h2>
+                            <h3 class="my-3">APRIL 30,2021</h3>
+                            <p class="mb-0"><b>Admissions for DAHTM, DHCS & IATA for 2021 batch is now open.</b> <br> We simply provide the best to our students. Our courses are designed after detailed study from experts who have abundant experience in the aviation industry.
+                                We have faculties graduated from the best universities with experience of working with reputed international and domestic airlines. They hold the competence to train you to perfection. Avenir has a separate Placement Assistance
+                                Cell to assist and groom students to become professionals and enable them to write their own success stories. We help Avenians to take off their career with top airlines "airport and hospitality industry" in the placement
+                                opportunities section. We feel pleased when our students get wings from Etihad, British Airways, Qatar Airways, Singapore Airlines, Emirates, and a lot more Airlines.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <hr class="mt-4"> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery py-5" id="gallery">
+            <div class="container">
+                <h1>GALLERY</h1>
+                <div class="clip-line mt-3 mb-5"></div>
+            </div>
+
+            <div class="bg2img py-5">
+                <div class="container py-5">
+                    <owl-carousel [options]="carouselOptions2" [carouselClasses]="['owl-theme', 'sliding']">
+                        <div class="item">
+                            <img (click)="modal('lifeatavenir.JPG')" src="assets/gallery/lifeatavenir.JPG" alt="">
+                            <h1 class="py-3 mb-0">LIFE AT AVENIR</h1>
+                        </div>
+                        <div class="item" (click)="modal('library.JPG')">
+                            <img src="assets/gallery/library.JPG" alt="">
+                            <h1 class="py-3 mb-0">LIBRARY</h1>
+                        </div>
+                        <div class="item" (click)="modal('conferancehall.JPG')">
+                            <img src="assets/gallery/conferancehall.JPG" alt="">
+                            <h1 class="py-3 mb-0">CONFERANCE HALL</h1>
+                        </div>
+                        <div class="item" (click)="modal('seminarhall.JPG')">
+                            <img src="assets/gallery/seminarhall.JPG" alt="">
+                            <h1 class="py-3 mb-0">SEMINAR HALL</h1>
+                        </div>
+                        <div class="item" (click)="modal('playground.jpg')">
+                            <img src="assets/gallery/playground.jpg" alt="">
+                            <h1 class="py-3 mb-0">PLAYGROUND</h1>
+                        </div>
+                        <div class="item" (click)="modal('transportation.jpg')">
+                            <img src="assets/gallery/transportation.jpg" alt="">
+                            <h1 class="py-3 mb-0">TRANSPORTATION</h1>
+                        </div>
+                        <div class="item" (click)="modal('dormitory.jpg')">
+                            <img src="assets/gallery/dormitory.jpg" alt="">
+                            <h1 class="py-3 mb-0">DORMITORY</h1>
+                        </div>
+                    </owl-carousel>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modalz" *ngIf="modalview">
+            <img [src]="galleryPath+modalview" alt="">
+            <div class="close-btn" (click)="closemodal()"><span class="material-icons">close</span></div>
+        </div>
+
+        <div class="contact py-5" id="contact">
+            <div class="container">
+                <h1>CONTACT US</h1>
+                <div class="clip-line mt-3 mb-5"></div>
+            </div>
+
+            <div class="feedback py-5">
+                <div class="container">
+                    <div class="box p-3 p-md-5">
+                        <h1>Enquiry Feedback*</h1>
+                        <input type="text" class="trans" placeholder="FULL NAME">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="email" class="trans" placeholder="EMAIL ADDRESS">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="phone" class="trans" placeholder="PHONE NUMBER">
+                            </div>
+                        </div>
+                        <textarea class="trans" rows="4" placeholder="YOUR MESSAGE"></textarea>
+                        <div class="d-flex justify-content-end mt-3">
+                            <button class="btn-style">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info pt-4">
+                <div class="container">
+                    <h2 class="mb-4">CONTACT INFO</h2>
+                    <h1>AVENIR INSTITUTE OF AVIATION</h1>
+                    <h3 class="mb-3">Future Educity, Poomala, Thrissur</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3><span class="material-icons pr-2">phone</span> +91 9895011345 , 9895011379, 9895011779</h3>
+                            <h3><span class="material-icons pr-2">email</span> contact@avenirinstitute.in, info@avenirinstitute.in</h3>
+                            <h3><span class="material-icons pr-2">chat_bubble</span> 9895011337</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h3><span class="material-icons pr-2">facebook</span> /Avenirinstituteofaviation</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
+
+    <footer class="gilroy text-center">
+        <div class="container py-3">
+            AVENIR ©
+            <a class="montserrat" href="https://imitpark.com/" target="_blank"><img src="assets/imit.png" alt=""> IMIT Park.</a> All Rights Reserved
+        </div>
+    </footer>
 </div>

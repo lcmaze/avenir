@@ -11,18 +11,32 @@ header {
     }
 }
 
+.whatsapp {
+    position: fixed;
+    z-index: 98;
+    bottom: 16px;
+    right: 16px;
+    img {
+        width: 60px;
+        box-shadow: 0px 0px 6px 0px #00000060;
+        border-radius: 60px;
+    }
+}
+
 .nav-styles {
     position: sticky;
     top: 0;
     z-index: 100;
     width: 100%;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 14px;
     text-transform: uppercase;
     margin-top: -20px;
     #logo {
-        width: 200px;
+        width: 180px;
     }
     .dropdown-menu li a {
+        font-size: 14px;
         padding-top: 12px;
         padding-bottom: 12px;
         border-bottom: 1px solid #eaeaea;
@@ -65,8 +79,8 @@ header {
         vertical-align: middle;
         background-color: transparent;
         h1 {
-            font-size: 70px;
-            font-weight: 600;
+            font-size: 100px;
+            font-weight: 400;
             // color: var(--prime);
             color: #fff;
             text-shadow: 4px 4px 4px #00000040;
@@ -80,21 +94,15 @@ header {
     }
     .new-btn {
         position: absolute;
-        z-index: 99;
-        top: 60vh;
-    }
-    .btn-style {
-        background-color: #000;
-        padding: 10px 20px;
-        color: #fff;
-        font-size: 16px;
-        border-radius: 10px;
-        box-shadow: 6px 6px 0px 0px #00000040;
-        border: 1px solid #000;
-    }
-    .btn-style:hover {
-        border: 1px solid #000;
-        box-shadow: 0px 0px 6px 0px #00000040;
+        z-index: 97;
+        top: 65vh;
+        .fut-logo {
+            width: 340px;
+            box-shadow: 0px 0px 5px #00000020;
+            background-color: #ffffff;
+            padding: 16px 16px;
+            border-radius: 6px;
+        }
     }
 }
 
@@ -134,6 +142,11 @@ header {
     position: relative;
     .airhostess2 {
         width: 100%;
+    }
+    .line-plane {
+        position: absolute;
+        right: 0;
+        top: 60px;
     }
     .why-cnt {
         h2 {
@@ -272,6 +285,165 @@ header {
     background-image: url('/assets/bg-colg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    .box {
+        background-color: #ffffff80;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 6px 6px 0px #00000030;
+        h1 {
+            color: var(--prime);
+        }
+        .trans {
+            text-transform: uppercase;
+            width: 100%;
+            margin-top: 20px;
+            padding: 6px 0px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            background-color: transparent;
+            border-bottom: 2px solid #5e5e5e;
+            color: #000;
+        }
+        .trans::placeholder {
+            color: #000;
+        }
+        .trans:focus {
+            outline: none;
+            border-bottom: 2px solid #1b59a0;
+        }
+    }
+}
+
+.gallery {
+    .bg2img {
+        background-image: url('/assets/bg2img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .item {
+            border: 1px solid transparent;
+            img {
+                height: 300px;
+                width: 100%;
+                object-fit: cover;
+            }
+            h1 {
+                background-color: #00000099;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        .item:hover {
+            border: 1px solid #fff;
+        }
+    }
+}
+
+.contact {
+    .feedback {
+        background: linear-gradient(180deg, var(--prime) 80%, #fff 50%);
+    }
+    .box {
+        background-color: #fff;
+        box-shadow: 0px 6px 6px 0px #00000020;
+        h1 {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: var(--prime);
+        }
+        .trans {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 16px;
+            border-top: 1px solid #fff;
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            background-color: transparent;
+            border-bottom: 1px solid #7e7e7e;
+            color: #000;
+        }
+        .trans::placeholder {
+            color: #000;
+        }
+        .trans:focus {
+            outline: none;
+            border: 1px solid #7e7e7e;
+        }
+    }
+    .info {
+        h1,
+        h2 {
+            font-size: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            span {
+                font-size: 20px;
+                vertical-align: bottom;
+                color: #7e7e7e;
+            }
+        }
+    }
+}
+
+.news {
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 18px;
+    }
+}
+
+footer {
+    background-color: #585858;
+    font-size: 16px;
+    color: #fff;
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+
+.modalz {
+    background-color: #00000040;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    img {
+        padding: 10px;
+        width: 80%;
+    }
+    .close-btn {
+        position: absolute;
+        z-index: 101;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        background-color: #00000090;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px 0px #00000090;
+    }
 }
 
 @media (max-width:1199.98px) {
@@ -299,11 +471,15 @@ header {
         .item {
             height: 520px;
             h1 {
-                font-size: 40px;
+                font-size: 60px;
             }
         }
         .new-btn {
             top: 340px;
+            .fut-logo {
+                width: 240px;
+                padding: 10px 16px;
+            }
         }
     }
 }
@@ -331,12 +507,16 @@ header {
             height: 500px;
             padding: 0px 16px !important;
             h1 {
-                font-size: 40px;
+                font-size: 45px;
             }
         }
         .new-btn {
             top: 380px;
             left: 16px;
+            .fut-logo {
+                width: 240px;
+                padding: 14px 16px;
+            }
         }
     }
     .clipper {
@@ -346,6 +526,13 @@ header {
         .plane1 {
             width: 280px;
             right: 10%;
+        }
+    }
+    .modalz {
+        background-color: #00000090;
+        img {
+            padding: 0px;
+            width: 100%;
         }
     }
 }

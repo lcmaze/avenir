@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,14 @@ import { DOCUMENT } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
+  modalview = new Subject();
+  galleryPath : any = 'assets/gallery/';
+
   constructor(@Inject(DOCUMENT) document) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.modalview = null;
+  }
 
   toggler(){
     let classb = document.getElementById('nav-dropper');
@@ -22,12 +28,12 @@ export class HomeComponent implements OnInit {
     if (window.pageYOffset > 70) {
       let element = document.getElementById('logo');
       let gradient = document.getElementById('gradient');
-      element.style.width = '160px';
+      element.style.width = '150px';
       gradient.style.height = '5px';
     } else {
       let element = document.getElementById('logo');
       let gradient = document.getElementById('gradient');
-      element.style.width = '200px';
+      element.style.width = '180px';
       gradient.style.height = '10px';
     }
   }
@@ -50,9 +56,38 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  mySlideImages = [1, 2, 3].map((i) => `https://picsum.photos/640/480?image=${i}`);
-  myCarouselImages = [1, 2, 3, 4, 5, 6].map((i) => `https://picsum.photos/640/480?image=${i}`);
-  mySlideOptions = { items: 1, dots: true, nav: false };
-  myCarouselOptions = { items: 3, dots: true, nav: true };
+  carouselOptions2 = {
+    margin: 20,
+    nav: false,
+    responsiveClass: true,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992:{
+        items: 3,
+      },
+      1200: {
+        items: 4
+      }
+    }
+  }
+  
+
+  modal(item){
+   this.modalview = item;
+  }
+
+  closemodal(){
+    this.modalview = null;
+  }
 
 }

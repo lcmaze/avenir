@@ -14,7 +14,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    OwlModule
+    OwlModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
