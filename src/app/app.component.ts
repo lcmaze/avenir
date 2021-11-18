@@ -14,8 +14,10 @@ export class AppComponent {
   ngOnInit() {
     this.title.setTitle('Avenir - Institute of Aviation');
     this.meta.addTags([
-      { name: 'keywords', content: 'Institute of Aviation, Institute of Aviation in Thrissur, Aviation College' },
-      { name: 'description', content: 'We help Avenians to take off their career with top airlines airport and hospitality industry in the placement opportunities section. Our Placement Cell is rich enough with qualified and experienced experts to groom Avenians for catching their dream flights. We feel pleased when our students get wings from Etihad, British Airways, Qatar Airways, Singapore Airlines, Lufthansa, Malaysia Airlines, Emirates, and a lot more Airlines.' },
+      { name: 'description', content: 'Avenir’s focus lies in creating versatile, structured training programs and certificate courses for students. The training is made after years of dedicated research and provides each student with the knowledge and skills required to realize great success within the fields of Aviation, Hospitality, and Travel and Customer Service.avenir institute of aviation' },
+      { name: 'keywords', content: 'avenir institute of aviation,courses,DAHTM,DHTCS,IATA' },
+      { name: 'author', content: 'Avenir' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
     ])
   }
 }

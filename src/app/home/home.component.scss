@@ -171,7 +171,7 @@ header {
     position: relative;
     overflow: hidden;
     .clipper-bg {
-        background-color: var(--prime);
+        // background-color: var(--prime);
         clip-path: polygon(100% 38%, 100% 0, 60% 40%, 0 100%, 0 38%);
         position: absolute;
         width: 100%;
